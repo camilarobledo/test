@@ -1,0 +1,110 @@
+/* Ejercicio 1: Colores */
+body {
+  background-color: #f4f4f9; /* color de fondo */
+}
+
+h1 {
+  color: #812eae; /* color del título */
+  margin-top: 20px; /* Ejercicio 3: margen superior */
+  font-family: Arial, sans-serif; /* Ejercicio 2: fuente */
+}
+
+/*Fuente de google*/
+p {
+  font-family: "Quicksand", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+
+  color: #1e1c1c;          /* color de texto */
+  font-size: 18px;      /* tamaño de fuente */
+  padding: 10px;        /* padding */
+  border: 1px solid #ddd; /* borde */
+  margin-bottom: 10px;  /* separación entre párrafos */
+}
+
+
+/* Ejercicio 4: Botón */
+button {
+  background-color: #28a745;
+  color: #fff;
+  border: none; /* sin borde */
+  border-radius: 5px;
+  padding: 10px;
+  width: 100px;
+  margin: 10px 0;
+  cursor: pointer;
+}
+
+/* Ejercicio 5: Inputs del formulario */
+input,
+textarea {
+  padding: 5px;
+  border: none;
+  margin: 5px 0;
+  display: block;
+}
+
+label {
+  font-family: Arial, sans-serif; /* fuente para labels */
+}
+
+textarea {
+  width: 300px;
+  height: 100px;
+}
+
+/* Ejercicio 6: Footer */
+footer {
+  background-color: #98a3af;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Ejercicio 7: Header */
+header {
+  background-color: #3498db;
+  color: white;
+  padding: 50px;
+  text-align: center;
+  font-size: 24px;
+}
+
+/* Ejercicio 8: Nav menu */
+nav {
+  background-color: #333;
+}
+
+nav ul {
+  list-style: none; /* quita bullets */
+  margin: 0;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block; /* en línea */
+  padding: 10px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+nav ul li ul {
+  display: none; /* ocultar submenú */
+}
+
+/* Ejercicio 9: Media queries */
+@media screen and (min-width: 768px) {
+  body {
+    background-color: #e6f7ff;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  body {
+    background-color: #ffe6f0;
+  }
+}
