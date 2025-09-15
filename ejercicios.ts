@@ -209,8 +209,7 @@ console.log(productosFormato);
 
 
 
-//ACLARACION: Los errores que me dan es porque se repite la funcion de logPerson en los ejercicios siguientes
-
+//ACLARACION: cambie los log para no tener error
 
 //Ejercicio 15:
 //Con los datos que tenemos, crear una interfaz "User" y aplicarla, para que el siguiente codigo compile sin errores:
@@ -230,12 +229,12 @@ const users: User[] = [
     }
 ];
 
-function logPerson(user: User): void {
+function logUser(user: User): void {
   console.log(` - ${user.name}, ${user.age}`);
 }
 
 console.log('Users:');
-users.forEach(logPerson);
+users.forEach(logUser);
 
 
 
@@ -246,10 +245,10 @@ users.forEach(logPerson);
 //Corregir el type Person para que acepte dos tipos: User y la nueva interfaz. 
 //Corregir la implementacion para aplicar el type Person para que el siguiente codigo compile sin errores. 
 
-interface User { name: string; age: number; occupation: string; }
 interface Admin { name: string; age: number; role: string; }
 
 type Person = User | Admin;
+
 const persons: Person[] = [
     {
         name: 'Max Mustermann',
@@ -273,12 +272,11 @@ const persons: Person[] = [
     }
 ];
 
-function logPerson(user: User) {
+function logPerson(user: Person) {
     console.log(` - ${user.name}, ${user.age}`);
 }
 
 persons.forEach(logPerson);
-
 
 
 
